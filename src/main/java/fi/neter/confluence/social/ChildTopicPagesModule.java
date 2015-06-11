@@ -29,7 +29,8 @@ public class ChildTopicPagesModule implements Macro
         if (children != null) for (Page child : children) {
         	List<Comment> comments = child.getComments();
     		
-        	int numberOfComments = comments.size();
+        	int numberOfComments = 0;
+        	if (comments != null) numberOfComments = comments.size();
         	Date latestCommentDate = null;
         	if (comments != null) for (Comment comment : comments) {
         		Date lastModificationDate = comment.getLastModificationDate();
