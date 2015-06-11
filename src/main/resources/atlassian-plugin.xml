@@ -7,7 +7,10 @@
     <vendor name="${project.organization.name}" url="${project.organization.url}"/>
   </plugin-info>
   <resource type="i18n" name="i18n" location="fi.neter.confluence.social"/>
-  <latestComment key="latestComment" name="Latest Comment" class="fi.neter.confluence.social.LatestCommentModule">
+  <web-panel key="latest-comment" name="Latest Comment" class="fi.neter.confluence.social.LatestCommentModule" location="fi.neter.confluence.social/LatestComment">
     <description>Shows the date of the latest comment to the target page.</description>
-  </latestComment>
+  </web-panel>
+  <web-panel name="ChildTopicPages" class="fi.neter.confluence.social.ChildTopicPages" i18n-name-key="child-topic-pages.name" key="child-topic-pages" location="fi.neter.confluence.social/ChildTopicPages" weight="1000">
+    <description key="child-topic-pages.description">The ChildTopicPages Plugin</description>
+  </web-panel>
 </atlassian-plugin>

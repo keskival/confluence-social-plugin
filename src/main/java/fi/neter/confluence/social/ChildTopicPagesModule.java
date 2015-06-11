@@ -7,11 +7,11 @@ import java.util.Map;
 import com.atlassian.confluence.api.service.content.*;
 import com.atlassian.plugin.web.model.WebPanel;
 
-public class LatestCommentModule implements WebPanel
+public class ChildTopicPagesModule implements WebPanel
 {
 	private ContentService contentService;
 	
-    public LatestCommentModule(ContentService contentService) {
+    public ChildTopicPagesModule(ContentService contentService) {
         this.contentService = contentService;
     }
 
