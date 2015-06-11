@@ -7,6 +7,8 @@ Create an Eclipse project for this by writing: atlas-mvn eclipse:eclipse
 
 Run with: atlas-run
 
+Build package with: atlas-package
+
 Screenshot:
 ![Screenshot](https://github.com/keskival/confluence-social-plugin/raw/master/sample.png "Screenshot")
 
