@@ -8,8 +8,6 @@ import java.util.Map;
 
 import com.atlassian.confluence.content.render.xhtml.ConversionContext;
 import com.atlassian.confluence.core.ContentEntityObject;
-import com.atlassian.renderer.RenderContext;
-import com.atlassian.renderer.TokenType;
 import com.atlassian.confluence.macro.Macro;
 import com.atlassian.confluence.macro.MacroExecutionException;
 import com.atlassian.confluence.pages.Comment;

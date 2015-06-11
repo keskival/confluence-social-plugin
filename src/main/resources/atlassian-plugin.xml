@@ -6,12 +6,14 @@
     <version>${project.version}</version>
     <vendor name="${project.organization.name}" url="${project.organization.url}"/>
   </plugin-info>
+  <resource type="i18n" name="i18n" location="/fi/neter/confluence/social" />
+  <resource type="download" name="images/" location="/images"/>
+  <web-resource key="my-macro-resources">
+    <resource type="download" name="child-topic-pages.css" location="/css/child-topic-pages.css"/>
+  </web-resource>
   <xhtml-macro name="ChildTopicPages" class="fi.neter.confluence.social.ChildTopicPagesModule"
     key="child-topic-pages" icon="/images/icon.jpeg">
     <description key="child-topic-pages.description">The ChildTopicPages Plugin</description>
     <parameters></parameters>
   </xhtml-macro>
-  <web-resource key="my-macro-resources">
-    <resource type="download" name="child-topic-pages.css" location="/css/child-topic-pages.css"/>
-  </web-resource>
 </atlassian-plugin>
