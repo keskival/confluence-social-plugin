@@ -1,4 +1,4 @@
-package com.atlassian.tutorial.helloworld;
+package fi.neter.confluence.social;
 
 import org.junit.Test;
 

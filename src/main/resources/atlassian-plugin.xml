@@ -6,7 +6,7 @@
     <version>${project.version}</version>
     <vendor name="${project.organization.name}" url="${project.organization.url}"/>
   </plugin-info>
-  <resource type="i18n" name="i18n" location="com.atlassian.tutorial.helloworld"/>
+  <resource type="i18n" name="i18n" location="fi.neter.confluence.social"/>
   <web-section name="mySection" i18n-name-key="my-section.name" key="my-section" location="client-sites-link" weight="1000">
     <description key="my-section.description">The mySection Plugin</description>
   </web-section>
