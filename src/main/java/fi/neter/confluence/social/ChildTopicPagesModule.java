@@ -59,7 +59,7 @@ public class ChildTopicPagesModule implements Macro
 
 	@Override
 	public BodyType getBodyType() {
-		return BodyType.RICH_TEXT;
+		return BodyType.NONE;
 	}
 
 	@Override
