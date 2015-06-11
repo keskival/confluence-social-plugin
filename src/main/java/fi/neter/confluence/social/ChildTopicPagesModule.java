@@ -46,7 +46,11 @@ public class ChildTopicPagesModule implements Macro
         	}
         	DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         	html.append("<tr><td><a href=\"" + child.getUrlPath() + "\">" + child.getTitle() + "</a></td><td>"
-        	    + numberOfComments + "</td><td>" + df.format(latestCommentDate) + "</td></tr>");
+        	    + numberOfComments + "</td><td>");
+        	if (latestCommentDate != null) {
+        		html.append(df.format(latestCommentDate));
+        	}
+    		html.append("</td></tr>");
         }
         // Trailer.
         html.append("</table>");
