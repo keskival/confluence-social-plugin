@@ -8,6 +8,8 @@ import java.util.Map;
 
 import com.atlassian.confluence.content.render.xhtml.ConversionContext;
 import com.atlassian.confluence.core.ContentEntityObject;
+import com.atlassian.renderer.RenderContext;
+import com.atlassian.renderer.TokenType;
 import com.atlassian.confluence.macro.Macro;
 import com.atlassian.confluence.macro.MacroExecutionException;
 import com.atlassian.confluence.pages.Comment;
@@ -23,13 +25,13 @@ public class ChildTopicPagesModule implements Macro
         List<Page> children = parent.getChildren();
         StringBuilder html = new StringBuilder();
         // Title row.
-        html.append("<table class=\"childtopicpages\"><hr><hd>Aihe</hd><hd>Viestejä</hd><hd>Viimeinen viesti</hd></hr>");
-        for (Page child : children) {
+        html.append("<table class=\"childtopicpages\"><tr><th>Aihe</th><th>Viestejä</th><th>Viimeinen viesti</th></tr>");
+        if (children != null) for (Page child : children) {
         	List<Comment> comments = child.getComments();
     		
         	int numberOfComments = comments.size();
         	Date latestCommentDate = null;
-        	for (Comment comment : comments) {
+        	if (comments != null) for (Comment comment : comments) {
         		Date lastModificationDate = comment.getLastModificationDate();
         		Date creationDate = comment.getCreationDate();
         		if (latestCommentDate == null ||
@@ -41,8 +43,8 @@ public class ChildTopicPagesModule implements Macro
         			latestCommentDate = creationDate;
         		}
         	}
-        	DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
-        	html.append("<tr><td>" + child.getLinkWikiMarkup() + "</td><td>"
+        	DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        	html.append("<tr><td><a href=\"" + child.getUrlPath() + "\">" + child.getTitle() + "</a></td><td>"
         	    + numberOfComments + "</td><td>" + df.format(latestCommentDate) + "</td></tr>");
         }
         // Trailer.
