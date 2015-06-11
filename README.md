@@ -5,3 +5,4 @@ Install the Confluence SDK using instructions here: https://developer.atlassian.
 
 Create an Eclipse project for this by writing: atlas-mvn eclipse:eclipse
 
+Run with: atlas-run
