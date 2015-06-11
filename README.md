@@ -10,3 +10,5 @@ Run with: atlas-run
 Screenshot:
 ![Screenshot](https://github.com/keskival/confluence-social-plugin/raw/master/sample.png "Screenshot")
 
+The precompiled package can be found from the target directory.
+
