@@ -7,17 +7,7 @@
     <vendor name="${project.organization.name}" url="${project.organization.url}"/>
   </plugin-info>
   <resource type="i18n" name="i18n" location="fi.neter.confluence.social"/>
-  <web-section name="mySection" i18n-name-key="my-section.name" key="my-section" location="client-sites-link" weight="1000">
-    <description key="my-section.description">The mySection Plugin</description>
-  </web-section>
-  <web-item name="Client Sites" i18n-name-key="client-sites.name" key="client-sites" section="system.top.navigation.bar" weight="1000">
-    <description key="client-sites.description">The Client Sites Plugin</description>
-    <label key="client-sites.label"/>
-    <link linkId="client-sites-link"/>
-  </web-item>
-  <web-item name="Radio Paradise" i18n-name-key="radio-paradise.name" key="radio-paradise" section="client-sites-link/my-section" weight="1000">
-    <description key="radio-paradise.description">The Radio Paradise Plugin</description>
-    <label key="radio-paradise.label"></label>
-    <link linkId="radio-paradise-link">http://www.radioparadise.com</link>
-  </web-item>
+  <latestComment key="latestComment" name="Latest Comment" class="fi.neter.confluence.social.LatestCommentModule">
+    <description>Shows the date of the latest comment to the target page.</description>
+  </latestComment>
 </atlassian-plugin>
