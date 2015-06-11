@@ -6,7 +6,8 @@
     <version>${project.version}</version>
     <vendor name="${project.organization.name}" url="${project.organization.url}"/>
   </plugin-info>
-  <xhtml-macro name="ChildTopicPages" class="fi.neter.confluence.social.ChildTopicPagesModule" key="child-topic-pages">
+  <xhtml-macro name="ChildTopicPages" class="fi.neter.confluence.social.ChildTopicPagesModule"
+    key="child-topic-pages" icon="/images/icon.jpeg">
     <description key="child-topic-pages.description">The ChildTopicPages Plugin</description>
     <parameters></parameters>
   </xhtml-macro>
