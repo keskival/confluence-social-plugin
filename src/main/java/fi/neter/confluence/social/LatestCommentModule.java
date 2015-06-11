@@ -1,13 +1,13 @@
 package fi.neter.confluence.social;
 
-import java.io.IOException;
-import java.io.Writer;
 import java.util.Map;
 
 import com.atlassian.confluence.api.service.content.*;
-import com.atlassian.plugin.web.model.WebPanel;
+import com.atlassian.confluence.content.render.xhtml.ConversionContext;
+import com.atlassian.confluence.macro.Macro;
+import com.atlassian.confluence.macro.MacroExecutionException;
 
-public class LatestCommentModule implements WebPanel
+public class LatestCommentModule implements Macro
 {
 	private ContentService contentService;
 	
@@ -16,15 +16,21 @@ public class LatestCommentModule implements WebPanel
     }
 
 	@Override
-	public String getHtml(Map<String, Object> context) {
+	public String execute(Map<String, String> parameters, String body,
+			ConversionContext context) throws MacroExecutionException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void writeHtml(Writer writer, Map<String, Object> context)
-			throws IOException {
+	public BodyType getBodyType() {
 		// TODO Auto-generated method stub
-		
+		return null;
+	}
+
+	@Override
+	public OutputType getOutputType() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

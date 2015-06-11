@@ -6,11 +6,16 @@
     <version>${project.version}</version>
     <vendor name="${project.organization.name}" url="${project.organization.url}"/>
   </plugin-info>
-  <resource type="i18n" name="i18n" location="fi.neter.confluence.social"/>
-  <web-panel key="latest-comment" name="Latest Comment" class="fi.neter.confluence.social.LatestCommentModule" location="fi.neter.confluence.social/LatestComment">
-    <description>Shows the date of the latest comment to the target page.</description>
-  </web-panel>
-  <web-panel name="ChildTopicPages" class="fi.neter.confluence.social.ChildTopicPages" i18n-name-key="child-topic-pages.name" key="child-topic-pages" location="fi.neter.confluence.social/ChildTopicPages" weight="1000">
+  <macro key="latest-comment" name="Latest Comment"
+    class="fi.neter.confluence.social.LatestCommentModule">
+    <description>Shows the date of the latest comment to the target page.
+    </description>
+    <parameters>
+      <parameter name="page" type="confluence_content">
+      </parameter>
+    </parameters>
+  </macro>
+  <macro name="ChildTopicPages" class="fi.neter.confluence.social.ChildTopicPages" key="child-topic-pages">
     <description key="child-topic-pages.description">The ChildTopicPages Plugin</description>
-  </web-panel>
+  </macro>
 </atlassian-plugin>
