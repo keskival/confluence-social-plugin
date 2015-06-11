@@ -6,15 +6,6 @@
     <version>${project.version}</version>
     <vendor name="${project.organization.name}" url="${project.organization.url}"/>
   </plugin-info>
-  <macro key="latest-comment" name="Latest Comment"
-    class="fi.neter.confluence.social.LatestCommentModule">
-    <description>Shows the date of the latest comment to the target page.
-    </description>
-    <parameters>
-      <parameter name="page" type="confluence_content">
-      </parameter>
-    </parameters>
-  </macro>
   <macro name="ChildTopicPages" class="fi.neter.confluence.social.ChildTopicPages" key="child-topic-pages">
     <description key="child-topic-pages.description">The ChildTopicPages Plugin</description>
   </macro>
