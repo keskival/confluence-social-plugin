@@ -9,8 +9,9 @@ Run with: atlas-run
 
 Build package with: atlas-package
 
-Screenshot:
-![Screenshot](https://github.com/keskival/confluence-social-plugin/raw/master/sample.png "Screenshot")
-
 The precompiled package can be found from the target directory.
 
+This plug-in contains one macro named ChildTopicPages. This can be added to any page.
+
+Screenshot:
+![Screenshot](https://github.com/keskival/confluence-social-plugin/raw/master/sample.png "Screenshot")
